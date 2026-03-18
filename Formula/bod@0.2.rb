@@ -1,8 +1,6 @@
 class BodAT02 < Formula
   desc "Board of Directors CLI (v0.2.0)"
   homepage "https://github.com/GalleyBytes/board-of-directors"
-  version "0.2.0"
-
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/GalleyBytes/board-of-directors/releases/download/v0.2.0/bod-v0.2.0-aarch64-apple-darwin.tar.gz"
@@ -26,6 +24,6 @@ class BodAT02 < Formula
   end
 
   test do
-    system "#{bin}/bod", "--version"
+    system bin/"bod", "--version"
   end
 end
