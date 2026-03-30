@@ -4,20 +4,20 @@ class Bod < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/GalleyBytes/board-of-directors/releases/download/v0.7.1/bod-v0.7.1-aarch64-apple-darwin.tar.gz"
-      sha256 "663297c59f429e7e49bc48febb768925b91032785f14da85275e102d42b033aa"
+      url "https://github.com/GalleyBytes/board-of-directors/releases/download/v0.8.0/bod-v0.8.0-aarch64-apple-darwin.tar.gz"
+      sha256 "2333bf5751980008726a93f53f72ac88b88fb717b56fa8bf34d902029b4f22e4"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/GalleyBytes/board-of-directors/releases/download/v0.7.1/bod-v0.7.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "fe0cb1629f138f6b0fa961f68929619c9b025866b33b2694eb4b34f4a30efe04"
+      url "https://github.com/GalleyBytes/board-of-directors/releases/download/v0.8.0/bod-v0.8.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "eb108394274cb4c6683f43a67fb37f4258ba3302f80fc28d15452bafbae91a73"
     end
 
     if Hardware::CPU.intel?
-      url "https://github.com/GalleyBytes/board-of-directors/releases/download/v0.7.1/bod-v0.7.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "31c874d1b43f84073abd960c0b54b788c184f8da060a4cc8214103bff42deca5"
+      url "https://github.com/GalleyBytes/board-of-directors/releases/download/v0.8.0/bod-v0.8.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a20cead4bc1c7fab39ad6c704f2b02b6a2025fa86f4ca4e02c15af1d24253d16"
     end
   end
 
